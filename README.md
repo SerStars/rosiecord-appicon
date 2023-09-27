@@ -1,4 +1,4 @@
-# This repo has only the fixing Nitro Icons stuff!
+# This repo has only the fixing Nitro Icons stuff (197.0_49832)!
 ## Install it at the [RELEASES](https://github.com/serstars/rosiecord/releases/) tab.
 
 # Rosiecord
