@@ -1,5 +1,5 @@
 # This repo has only the fixing Nitro Icons stuff!
-## Install it at the [RELEASES](https://github.com/acquitelol/rosiecord/releases/) tab.
+## Install it at the [RELEASES](https://github.com/serstars/rosiecord/releases/) tab.
 
 # Rosiecord
 
