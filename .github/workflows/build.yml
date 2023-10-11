@@ -1,7 +1,6 @@
 name: Build Enmity and Inject Rosiecord
 on:
   push:
-  workflow_dispatch:
 
 jobs:
   build:
