@@ -46,4 +46,5 @@ jobs:
             Version `${{ steps.version.outputs.__DISCORD_VERSION }}`
             Click [here](https://github.com/SerStars/rosiecord-appicon/releases/latest) to download
           url: https://github.com/SerStars/rosiecord-appicon/releases
+          content: <@861631850681729045>
           color: 0x000001
