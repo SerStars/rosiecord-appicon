@@ -1,13 +1,11 @@
-# This repo has only the fixing Nitro Icons stuff
-## Install it at the [RELEASES](https://github.com/serstars/rosiecord/releases/) tab.
-
-# Rosiecord
+# Rosiecord-appicon
 
 ## A custom Enmity patcher with interchangeable fonts, icons, and tweaks :3
+## This repo has fixed the issue where Windows Users can't install Rosiecord and makes the Nitro Only App Icons Available (don't have Nitro? Install [this](https://canary.discord.com/channels/950850315601711176/961782195767365732/1161787573514031174) plugin).
 
 ### How to install
 
-The [Releases](https://github.com/acquitelol/rosiecord/releases/) tab has all of the IPAs that you can install. Sideload the IPA normally, as if you were sideloading Enmity.
+The [Releases](https://github.com/serstars/rosieccord-appicon/releases/) tab has all of the IPAs that you can install. Sideload the IPA normally, as if you were sideloading Enmity.
 
 **Please note that Rosiecord does not work with Altstore, and must be used with Sideloadly.**
 
