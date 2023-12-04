@@ -123,7 +123,7 @@ const EntryPoint = async (index: number, ipaName: string) => {
         case 0: {
             const M: Main = new Main('IPA', "Different Fonts");
             await M.Main(async (): Promise<void> => {
-                const ipaList: string[] = ['GGSans', ...await M.get('ls Fonts/woff2')];
+                const ipaList: string[] = ['GGSans', ...await M.get('ls Fonts/ttf')];
                 const ipaStates: State[] = ipaList.map(ipa => new State('pending', ipa))
 
                 await Shell.write(`${M.CYAN}Packaging the ${M.PINK}Base IPAs${M.CYAN}. If an ${M.PINK}IPA${M.CYAN} has been ${M.GREEN}successfully${M.CYAN} packaged, it will look like this: ${M.BLUE}"${M.PINK}[${M.CYAN}+${M.PINK}]${M.GREEN} Example IPA${M.BLUE}"\n`)
@@ -137,7 +137,7 @@ const EntryPoint = async (index: number, ipaName: string) => {
 
                 for (const Font of ipaList.filter(ipa => ipa !== 'GGSans')) {
                     await Shell.runSilently(`unzip -qq -o Dist/Rosiecord-${ipaName.split("_")[1]}_GGSans-Font.ipa`);
-                    await Shell.runSilently(`cp -rf Fonts/woff2/${Font}/* Payload/Discord.app/`)
+                    await Shell.runSilently(`cp -rf Fonts/ttf/${Font}/* Payload/Discord.app/`)
                     await Shell.runSilently(`zip -q -r Dist/Rosiecord-${ipaName.split("_")[1]}_${Font}-Font.ipa Payload & wait $!`)
                     await Shell.runSilently(`rm -rf Payload & wait $!`);
 
@@ -317,11 +317,11 @@ const main = async (): Promise<void> => {
     // await Shell.runSilently(`cp -rf Icons/* Payload/Discord.app/`)
     // await Shell.runSilently(`plutil -replace CFBundleIcons -xml "<dict><key>CFBundlePrimaryIcon</key><dict><key>CFBundleIconFiles</key><array><string>EnmityIcon60x60</string></array><key>CFBundleIconName</key><string>EnmityIcon</string></dict></dict>" ${MAIN_PLIST} & wait $!`)
     // await Shell.runSilently(`plutil -replace CFBundleIcons~ipad -xml "<dict><key>CFBundlePrimaryIcon</key><dict><key>CFBundleIconFiles</key><array><string>EnmityIcon60x60</string><string>EnmityIcon76x76</string></array><key>CFBundleIconName</key><string>EnmityIcon</string></dict></dict>" ${MAIN_PLIST} & wait $!`, (stderr) => {
-    //    Shell.write(stderr
-    //        ? `${S.FAILURE} An error occurred while removing Discord's ${M.PINK}\"Supported Device Limits\"${M.RED}.${M.ENDC}\n`
-    //        : `${S.SUCCESS} Successfully Patched ${M.PINK}\"Discord's Icons\"${M.GREEN} to ${M.PINK}\"Enmity's Icons\"${M.GREEN}.${M.ENDC}\n`
-    //    )
-    //})
+    //     Shell.write(stderr
+    //         ? `${S.FAILURE} An error occurred while removing Discord's ${M.PINK}\"Supported Device Limits\"${M.RED}.${M.ENDC}\n`
+    //         : `${S.SUCCESS} Successfully Patched ${M.PINK}\"Discord's Icons\"${M.GREEN} to ${M.PINK}\"Enmity's Icons\"${M.GREEN}.${M.ENDC}\n`
+    //     )
+    // })
 
     await Shell.write(`${S.PENDING}${M.CYAN} Enabling ${M.PINK}\"UISupportsDocumentBrowser\"${M.CYAN} and ${M.PINK}\"UIFileSharingEnabled\"${M.CYAN}.${M.ENDC}\r`);
     await Shell.run(`plutil -replace UISupportsDocumentBrowser -bool true ${MAIN_PLIST} & wait $!`)
