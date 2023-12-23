@@ -1,4 +1,4 @@
-# USE THE NORMAL ROSIECORD FOR UPDATED VERSION @ https://github.com/acquitelol/rosieccord/releases/
+# USE THE NORMAL ROSIECORD FOR UPDATED VERSION @ https://github.com/acquitelol/rosiecord/releases/
 
 
 
