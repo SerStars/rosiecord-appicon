@@ -1,3 +1,8 @@
+# USE THE NORMAL ROSIECORD FOR UPDATED VERSION @ https://github.com/acquitelol/rosieccord/releases/
+
+
+
+
 # Rosiecord-appicon
 
 ## A custom Enmity patcher with interchangeable fonts, icons, and tweaks :3
