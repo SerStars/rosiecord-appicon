@@ -1,4 +1,5 @@
-# USE THE NORMAL ROSIECORD FOR UPDATED VERSION @ https://github.com/acquitelol/rosiecord/releases/
+# USE https://github.com/serstars/rosiecord/releases/
+# THIS REPO DOES NOT GET UPDATED
 
 
 
